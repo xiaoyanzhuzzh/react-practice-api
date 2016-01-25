@@ -1,3 +1,5 @@
+require 'api_constraints'
+
 ReactPracticeApi::Application.routes.draw do
   #API definition
   namespace :api, defaults: { format: :json }, constraints: { subdomain: 'api' }, path: '/'do
